@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Vowel</title>
+</head>
+
+<body>
+
+    <script>
+        function isVowel(x) {
+
+            var result;
+
+            result = x == "A" || x == "E" || x == "I" || x == "O" || x == "U" || x == "a" || x == "e" || x == "i" || x == "o" || x == "u";
+            return result;
+        }
+
+        var input;
+
+        do {
+            input = prompt("Enter a character ");
+            if (input.length == 1) {
+                alert(isVowel(input));
+            }
+        } while (input.length != 1);
+    </script>
+
+</body>
+
+</html>
